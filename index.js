@@ -23,9 +23,9 @@ function pullskeywords() {
         .replace(/whats/g, "what is")
         .replace(/please /g, "")
         .replace(/ please/g, "");
-    }
+}
 
-    const trigger = [
+const trigger = [
         //0 
         ["hi", "hey", "hello", "yo", "yoo", "uwu", "sup"],
         //1
@@ -40,7 +40,7 @@ function pullskeywords() {
         ["thanks", "thank you", "ty", "tysm"],
         //7
         ["bye", "good bye", "goodbye", "cya"]
-        ];
+];
         
         const reply = [
         //0 
@@ -65,13 +65,13 @@ function pullskeywords() {
         ["You're welcome", "No problem", "Glad I could help!"],
         //7
         ["Goodbye", "See you later", "Cya"],
-        ];
+];
         
         const alternative = [
           "I couldn't quite get that, try again. The best way to let me know what you want is to use clear words. If I still can't help you, email Skjlled Support at Skjlled@Skjlled.com"
-        ];
+];
 
-        function compare(triggerArray, replyArray, text) {
+function compare(triggerArray, replyArray, text) {
             let item;
             for (let x = 0; x < triggerArray.length; x++) {
               for (let y = 0; y < replyArray.length; y++) {
@@ -82,8 +82,8 @@ function pullskeywords() {
               }
             }
             return item;
-          }
-          function output(input) {
+}
+function output(input) {
             let product;
             let text = input.toLowerCase().replace(/[^\w\s\d]/gi, "");
             text = text
@@ -106,14 +106,27 @@ function pullskeywords() {
             }
           
             //update DOM
-            
+            addChat(input, product);
             
             document.getElementById("chatbot").innerHTML = product;
             speak(product);
             
 
             document.getElementById("input").value = " ";
-          }
-          const robot = ["How do you do, fellow human", "I am not a bot"];
+}
+function addChat(input, product) {
+  const mainDiv = document.getElementById("main");
+  let userDiv = document.createElement("div");
+  userDiv.id = "user";
+  userDiv.innerHTML = `You: <span id="user-response">${input}</span>`;
+  mainDiv.appendChild(userDiv);
+
+  let botDiv = document.createElement("div");
+  botDiv.id = "bot";
+  botDiv.innerHTML = `Chatbot: <span id="bot-response">${product}</span>`;
+  mainDiv.appendChild(botDiv);
+  speak(product);
+}
+const robot = ["How do you do, fellow human", "I am not a bot"];
 
           
