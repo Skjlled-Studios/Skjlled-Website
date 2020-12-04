@@ -120,10 +120,7 @@ function output(input) {
   addChat(input, product);
             
   document.getElementById("chatbot").innerHTML = product;
-  speak(product);
-            
-
-  document.getElementById("input").value = " ";
+  document.getElementById("input").innerHTML = " ";
 }
 function addChat(input, product) {
   const mainDiv = document.getElementById("main");
@@ -136,9 +133,5 @@ function addChat(input, product) {
   botDiv.id = "bot";
   botDiv.innerHTML = `Skjlled Studios: <span id="bot-response">${product}</span>`;
   mainDiv.appendChild(botDiv);
-  speak(product);
 }
 const robot = ["How do you do, fellow human", "I am not a bot"];
-
-
-          
