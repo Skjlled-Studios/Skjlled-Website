@@ -134,7 +134,7 @@ function addChat(input, product) {
 
   let botDiv = document.createElement("div");
   botDiv.id = "bot";
-  botDiv.innerHTML = `Chatbot: <span id="bot-response">${product}</span>`;
+  botDiv.innerHTML = `Skjlled Studios: <span id="bot-response">${product}</span>`;
   mainDiv.appendChild(botDiv);
   speak(product);
 }
