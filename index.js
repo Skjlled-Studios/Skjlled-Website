@@ -106,10 +106,11 @@ function pullskeywords() {
             }
           
             //update DOM
+            
             addChat(input, product);
-
             document.getElementById("chatbot").innerHTML = product;
             speak(product);
+            
 
             document.getElementById("input").value = " ";
           }
