@@ -30,7 +30,7 @@ span {
     font-size: 110%;
     background-color: rgb(136, 115, 160); 
     color:#f1f1f1;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 ::-webkit-scrollbar {
     width: 10px;
