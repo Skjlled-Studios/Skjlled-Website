@@ -27,7 +27,7 @@ function pullskeywords() {
 
 const trigger = [
   //0 
-  ["hi", "hey", "hello", "yo", "yoo", "uwu", "sup", "greetings"],
+  ["hi", "hey", "hello", "yo", "yoo", "uwu", "sup"],
   //1
   ["how are you", "how are things"],
   //2
