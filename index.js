@@ -79,7 +79,7 @@ const reply = [
 ];
         
 const alternative = [
-  "I couldn't quite get that, the best way to let me know what you want is to use clear words. If I still can't help you, be sure to email Skjlled Support at Skjlled@Skjlled.com"
+  "I couldn't quite get that, try again. The best way to let me know what you want is to use clear words. If I still can't help you, email Skjlled Support at Skjlled@Skjlled.com"
 ];
 
 function compare(triggerArray, replyArray, text) {
@@ -120,18 +120,18 @@ function output(input) {
   addChat(input, product);
             
   document.getElementById("chatbot").innerHTML = product;
-  document.getElementById("input").value = " ";
+  document.getElementById("input").innerHTML = " ";
 }
 function addChat(input, product) {
   const mainDiv = document.getElementById("main");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
-  userDiv.innerHTML =  `<p>You: <span id="user-response">${input}</span></p>`;
+  userDiv.innerHTML = `You: <span id="user-response">${input}</span>`;
   mainDiv.appendChild(userDiv);
 
   let botDiv = document.createElement("div");
   botDiv.id = "bot";
-  botDiv.innerHTML = `<p>Skjlled Studios: <span id="bot-response">${product}</span></p>`;
+  botDiv.innerHTML = `Skjlled Studios: <span id="bot-response">${product}</span>`;
   mainDiv.appendChild(botDiv);
 }
 const robot = ["How do you do, fellow human", "I am not a bot"];
