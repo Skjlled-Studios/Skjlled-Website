@@ -17,7 +17,7 @@ const trigger = [
   //1
   ["how are you", "how are things", "how r u"],
   //2
-  ["what is going on", "what is up", "sup"],
+  ["what is going on", "what is up", "sup", "wyd"],
   //3
   ["happy", "good", "well", "fantastic", "cool", "epic", "amazing"],
   //4
@@ -113,11 +113,11 @@ function addChat(input, product) {
   let userDiv = document.createElement("div");
   userDiv.id = "user";
   userDiv.innerHTML =  `<p>You: <span id="user-response">${input}</span></p>`;
-  mainDiv.appendChild(userDiv);
+  mainDiv.prepend(userDiv);
 
   let botDiv = document.createElement("div");
   botDiv.id = "bot";
   botDiv.innerHTML = `<p>Skjlled Studios: <span id="bot-response">${product}</span></p>`;
-  mainDiv.appendChild(botDiv);
+  mainDiv.prepend(botDiv);
 }
 const robot = ["How do you do, fellow human", "I am not a bot"];
