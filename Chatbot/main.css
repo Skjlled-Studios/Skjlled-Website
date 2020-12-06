@@ -1,11 +1,11 @@
+
+
 body { 
     color: #421; 
     font-weight: bold; 
     font-size: 13px; 
     font-family: "Courier New"; 
     background: rgb(200, 232, 241); 
-
-
 }
 span { 
     color: rgb(9, 67, 133); 
@@ -16,6 +16,7 @@ span {
 #main { 
     width: 200px; 
     border: 0px solid #421;
+    padding-top: 30px;
 }
 #main div { 
     margin: 10px; 

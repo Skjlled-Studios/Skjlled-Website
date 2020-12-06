@@ -11,25 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
    });
 });
 
-function pullskeywords() {
-
-   //remove all characters except word characters, space, and digits
-    let text = input.toLowerCase().replace(/[^\w\s\d]/gi, "");
-    
-   // 'i feel happy' -> 'happy'
-   text = text
-    .replace(/ a /g, " ")
-    .replace(/i feel /g, "")
-    .replace(/whats/g, "what is")
-    .replace(/please /g, "")
-    .replace(/ please/g, "");
-}
-
 const trigger = [
   //0 
   ["hi", "hey", "hello", "yo", "yoo", "uwu", "sup"],
   //1
-  ["how are you", "how are things"],
+  ["how are you", "how are things", "how r u"],
   //2
   ["what is going on", "what is up", "sup"],
   //3
@@ -89,6 +75,7 @@ function compare(triggerArray, replyArray, text) {
       if (triggerArray[x][y] == text) {
         items = replyArray[x];
         item = items[Math.floor(Math.random() * items.length)];
+        
       }
     }
   }
@@ -96,7 +83,7 @@ function compare(triggerArray, replyArray, text) {
 }
 function output(input) {
   let product;
-  let text = input.toLowerCase().replace(/[^\w\s\d]/gi, "");
+  var text = input.toLowerCase().replace(/[^\w\s\d]/gi, "");
   text = text
     .replace(/ a /g, " ")
     .replace(/i feel /g, "")
@@ -107,7 +94,6 @@ function output(input) {
   //compare arrays
   //then search keyword
   //then random alternative
-          
   if (compare(trigger, reply, text)) {
     product = compare(trigger, reply, text);
   } else if (text.match(/robot/gi)) {
@@ -120,7 +106,7 @@ function output(input) {
   addChat(input, product);
             
   document.getElementById("chatbot").innerHTML = product;
-  document.getElementById("input").value = " ";
+  document.getElementById("input").value = "";
 }
 function addChat(input, product) {
   const mainDiv = document.getElementById("main");
