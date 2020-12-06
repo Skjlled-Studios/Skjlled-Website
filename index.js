@@ -4,7 +4,7 @@ function mise(){
         current = "-";
         //maximising
         document.getElementById("chat").style.display = "inline-block";
-        document.getElementById("chatDestroyer").style.width = "29.9%";
+        document.getElementById("chatDestroyer").style.width = "30%";
         document.getElementById("chatDestroyer").style.borderTopRightRadius = "0";
     }else{
         current = "+";

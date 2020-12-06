@@ -1,19 +1,17 @@
-
-
 body { 
-    color: #421; 
+    color: rgb(136, 115, 160); 
     font-weight: bold; 
     font-family: "Courier New"; 
-    background: rgb(200, 232, 241); 
+    background: rgb(66, 36, 94); 
 }
 span { 
-    color: rgb(9, 67, 133); 
+    color: #f1f1f1; 
 } 
 ::-webkit-input-placeholder { 
-    color: rgb(8, 80, 46) 
+    color: rgb(82, 49, 112);
 }
 #main { 
-    width: 200px; 
+    width: 93%; 
     border: 0px solid #421;
     padding-top: 30px;
     
@@ -29,16 +27,19 @@ span {
     width:93%;
     margin:0;
     height:10%;
-    font-size: 110%; 
+    font-size: 110%;
+    background-color: rgb(136, 115, 160); 
+    color:#f1f1f1;
+    border-radius: 10px;
 }
 ::-webkit-scrollbar {
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background:rgb(66, 36, 94); 
   }
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: rgb(136, 115, 160); 
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 

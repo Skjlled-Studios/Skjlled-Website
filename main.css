@@ -4,6 +4,8 @@ iframe{
     bottom:7%;
     display:inline-block;
     border: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 button{
     position: fixed;
@@ -11,11 +13,11 @@ button{
     bottom:2.5%;
     font-size:200%;
     vertical-align: bottom;
-    width:29.9%;
+    width:30%;
     height:5%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    background-color: rgb(9, 67, 133);
-    color:whitesmoke;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(66, 36, 94);;
+    color:#f1f1f1;
     border: 0;
 }
