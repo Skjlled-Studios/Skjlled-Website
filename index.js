@@ -120,7 +120,7 @@ function output(input) {
   addChat(input, product);
             
   document.getElementById("chatbot").innerHTML = product;
-  document.getElementById("input").innerHTML = " ";
+  document.getElementById("input").value = " ";
 }
 function addChat(input, product) {
   const mainDiv = document.getElementById("main");
