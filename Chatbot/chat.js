@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     inputField.addEventListener("keydown", function(e) {
     if (e.code === "Enter") {
        let input = document.getElementById("input").value;
-       document.getElementById("user").innerHTML = input;
        output(input);    
        }
    });
