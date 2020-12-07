@@ -88,10 +88,10 @@ function output(input) {
     .replace(/i feel /g, "")
     .replace(/whats/g, "what is")
     .replace(/please /g, " ")
-    .replace(/ please/g, " ")
-    .replace(/ i'm/g, " ")
-    .replace(/ im/g, " ")
-    .replace(/ i need/g, " ");
+    .replace(/please/g, " ")
+    .replace(/i'm/g, " ")
+    .replace(/im/g, " ")
+    .replace(/i need/g, " ");
           
   //compare arrays
   //then search keyword
