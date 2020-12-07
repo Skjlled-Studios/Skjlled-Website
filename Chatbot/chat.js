@@ -89,7 +89,7 @@ function output(input) {
     .replace(/whats/g, "what is")
     .replace(/please /g, " ")
     .replace(/please/g, " ")
-    .replace(/i'm/g, " ")
+    .replace(/i 'm/g, " ")
     .replace(/im/g, " ")
     .replace(/i need/g, " ");
           
