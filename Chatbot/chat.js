@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const trigger = [
-  //0 
+  //0 - Hello
   ["hi", "hey", "hello", "yo", "yoo", "uwu", "sup"],
-  //1
+  //1 - How are ypu
   ["how are you", "how are things", "how r u"],
-  //2
+  //2 - Whats up
   ["what is going on", "what is up", "sup", "wyd"],
   //3
-  ["happy", "good", "well", "fantastic", "cool", "epic", "amazing"],
+  ["help", "assistance"],
   //4
   ["bad", "bored", "tired", "sad"],
   //6
@@ -87,8 +87,11 @@ function output(input) {
     .replace(/ a /g, " ")
     .replace(/i feel /g, "")
     .replace(/whats/g, "what is")
-    .replace(/please /g, "")
-    .replace(/ please/g, "");
+    .replace(/please /g, " ")
+    .replace(/ please/g, " ")
+    .replace(/ i'm/g, " ")
+    .replace(/ im/g, " ")
+    .replace(/ i need/g, " ");
           
   //compare arrays
   //then search keyword
