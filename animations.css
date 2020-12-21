@@ -1,0 +1,37 @@
+/*the classes*/
+.buttonanimate{
+    animation-name: expandbutton;
+    animation-duration: 0.5s;
+}
+.buttonanimate2{
+    animation-name: delbutton;
+    animation-duration: 0.5s;
+}
+.frameanimate{
+    animation-name: expandframe;
+    animation-duration: 0.5s;
+}
+.frameanimate2{
+    animation-name: delframe;
+    animation-duration: 0.5s;
+}
+
+/*the magic*/
+@keyframes expandbutton{
+    from {width:0%; border-top-right-radius:50%;}
+    to {width:30%; border-top-right-radius:0;}
+}
+@keyframes delbutton{
+    from {width:30%; border-top-right-radius:0;}
+    to {width:3%; border-top-right-radius:50%;}
+}
+
+@keyframes expandframe{
+    from {height:0px;width:0%;}
+    to {height:200px;width:30%;}
+}
+
+@keyframes delframe{
+    from {height:200px;width:30%;}
+    to {height:0px;width:0%;}
+}

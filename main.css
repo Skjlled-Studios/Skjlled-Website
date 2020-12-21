@@ -1,3 +1,4 @@
+/*chat stuff*/
 iframe{
     position: fixed;
     right:4%;
@@ -6,6 +7,8 @@ iframe{
     border: 0;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    width: 30%;
+    height:200px;
 }
 button{
     position: fixed;
