@@ -8,7 +8,7 @@ function mise(){
         chat.style.width = "30%";
         chat.style.height = "200px";
         elemente.style.width = "30%";
-        elemente.style.borderTopRightRadius = "0";
+        elemente.style.borderBottomRightRadius = "0";
 
 
         //animation for button
@@ -25,8 +25,8 @@ function mise(){
         //minimising
         chat.style.width = "0";
         chat.style.height = "0";
-        elemente.style.width = "3%";
-        elemente.style.borderTopRightRadius = "50%";
+        elemente.style.width = "50px";
+        elemente.style.borderBottomRightRadius = "15px";
 
         //animation for button
         elemente.classList.remove("buttonanimate");

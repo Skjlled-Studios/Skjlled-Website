@@ -1,7 +1,7 @@
 /*chat stuff*/
 iframe{
     position: fixed;
-    right:4%;
+    right:1%;
     bottom:64px;
     display:inline-block;
     border: 0;
@@ -12,7 +12,7 @@ iframe{
 }
 button{
     position: fixed;
-    right:4%;
+    right:1%;
     bottom:2.5%;
     font-size:200%;
     vertical-align: bottom;
